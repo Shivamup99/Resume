@@ -413,7 +413,7 @@
 
                 </div>
                 <div class="right">
-                    <form action="">
+                    <form action="POST" data-netlify = "true">
                         <div class="form_group">
                             <div>
                                 <label for=''>Name</label>
@@ -422,7 +422,7 @@
 
                             <div>
                                 <label for=''>Email</label>
-                                <input type="email" />
+                                <input type="email"  id="email" />
                             </div>
 
 
@@ -431,8 +431,11 @@
                         <div class="form_group textarea_wrapper">
                             <div>
                                 <label for=''>Message</label>
-                                <textarea name="" id="" cols="30" rows="5"></textarea>
+                                <textarea name="" id="message" cols="30" rows="5"></textarea>
                             </div>
+                        </div>
+                        <div class="firld">
+                            <div data-netlify-recaptcha="true"></div>
                         </div>
 
                         <button type='submit'>Submit Now</button>
@@ -457,5 +460,16 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./plugins/riples.js"></script>
     
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.5/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
 </body>
 </html>
